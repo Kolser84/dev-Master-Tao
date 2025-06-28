@@ -13,3 +13,32 @@
        color: $primary-color; 
     }
 }
+
+.hamburger {
+    display: flex;
+    align-items: center;
+justify-content: center;
+padding: 7px;
+
+    &:focus {
+            box-shadow: none;   
+        }
+}
+
+.hamburger-box {
+    width: 26px;
+    height: 26px;
+   
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 26px;
+    height: 2px;
+    background-color: #ffffff;
+  
+}
