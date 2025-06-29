@@ -1,7 +1,15 @@
+
+
 * {
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-size: 16px;
+
+}
+
 
 body {
     font-family: "ProximaNova";
@@ -9,9 +17,6 @@ body {
     color: $color;
 }
 
-html {
-    font-size: 16px;
-}
 
 .fw-300 {
     font-weight: 300;
@@ -42,6 +47,8 @@ html {
     }
 
     &.btn-sm {
+        padding: 12px 18px;
+
 
     }
 

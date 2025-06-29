@@ -1,3 +1,6 @@
+
+
+
 .navbar {
     padding: 37px 0 27px;
 }
@@ -9,8 +12,9 @@
 
 .nav-link {
     color: $color;
+
     &:hover {
-       color: $primary-color; 
+        color: $primary-color;
     }
 }
 
@@ -19,6 +23,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
+    align-items: center;
+justify-content: center;
+padding: 7px;
+
     &:focus {
             box-shadow: none;   
         }
@@ -44,5 +53,25 @@
     position: relative;
 }
 
+.hamburger-box {
+    width: 26px;
+    height: 26px;
+   
+}
 
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 26px;
+    height: 2px;
+    background-color: #ffffff;
+  
+}
 
+.logo {
+    max-width: 175px;
+
+}
