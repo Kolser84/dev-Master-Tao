@@ -34,24 +34,7 @@ padding: 7px;
 }
 
 
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after,
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after  {
-    background-color: #fff;
-    width: 26px;
-        height: 2px;
-    
-}
 
-.hamburger-box {
-    width: 26px;
-    height: 26px;
-    display: inline-block;
-    position: relative;
-}
 
 .hamburger-box {
     width: 26px;
