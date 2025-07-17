@@ -17,6 +17,10 @@ body {
     color: $color;
 }
 
+section {
+    margin-bottom: $section-margin;
+}
+
 h1, h2, h3, h4, h5, h6 {
     
     font-weight: 700;
@@ -103,10 +107,7 @@ h6 {
     }
 }
 
-.container {
-    
 
-}
 
 .template-title {
     text-align: center;
@@ -121,14 +122,15 @@ h6 {
         margin-bottom: 7px;
 
         &::after {
-                content: "";
-                position: absolute;
-                width: 85px;
-                height: 2px;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 52px;
-                background-color: $primary-color;   }
+            content: "";
+            position: absolute;
+            width: 85px;
+            height: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 52px;
+            background-color: $primary-color;   
+        }
     }
         
     h3 { 
