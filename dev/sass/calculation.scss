@@ -28,8 +28,17 @@
     position: relative;
 }
 
+.input-box_checkbox {
+    padding-left: 45px;
+}
+
+label {
+    cursor: pointer;
+}
+
 input {
-    background-color: #fff;
+    background-color: $color;
+    border: 1px solid $bg-color;
     font-size: 15px;
     border-radius: 10px;
     padding: 18px 20px;
@@ -37,13 +46,22 @@ input {
 }
 
 input[type='checkbox'] + label:before {
-            content: "1";
-            background-color: blue;
+            content: "";
+            background-color: $color;
             position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
 }
 
 input[type='checkbox']:checked + label:before {
-            content: "0";
-            background-color: yellow;
+            content: "";
+            background: url(./assets/img/checked.svg) $color;
+        
 }
 
+input[type='checkbox'] {
+    display: none;
+}
