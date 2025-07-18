@@ -36,13 +36,13 @@ input {
    
 }
 
-input[type='checkbox'] + labe:before {
+input[type='checkbox'] + label:before {
             content: "1";
             background-color: blue;
             position: absolute;
 }
 
-input[type='checkbox']:checked + labe:before {
+input[type='checkbox']:checked + label:before {
             content: "0";
             background-color: yellow;
 }
