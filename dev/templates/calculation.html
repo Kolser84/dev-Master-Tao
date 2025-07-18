@@ -1,13 +1,59 @@
-<section class="calculation">
+<section id="calculation" class="calculation">
     <div class="container">
-        <form>
-            <input type="text">
-            <select>
-                <option>Пункт 1</option>
-                <option>Пункт 2</option>
-                <option>Пункт 3</option>
-                <option>Пункт 4</option>
-            </select>
+        <div class="template-title template-title_case-3">
+            <h2>Отримати розрахунок вартості вашого вантажу</h2>
+        </div>
+        <form class="calculation-form">
+            <div class="form-row">
+                <div class="form-column">
+                  <div class="input-box">
+                    <label for="product-category">Категорія товару:</label>
+                    <input id="product-category" type="text">
+                  </div>
+                  <div class="input-box">
+                    <label for="cargo weight">Вага вантажу (кг):</label>
+                    <input id="cargo weight" type="number">
+                  </div>
+                </div>
+              <div class="form-column">
+                  <div class="input-box">
+                    <label for="cargo-cost">Вартість вантажу:</label>
+                    <input id="cargo-cost" type="number">
+                  </div>
+                  <div class="input-box">
+                      <label for="cargo volume">Об'єм вантажу (m3)</label>
+                      <input id="cargo volume" type="number">
+                  </div>
+              </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-column">
+                    <div class="input-box">
+                        <input id="insurance" type="checkbox">
+                        <label for="insurance">Страховка</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="customs clearance" type="checkbox">
+                        <label for="customs clearance">Митне оформлення</label>
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="input-box">
+                        <label for="HC Code">Код ТН ЗЕД:</label>
+                        <input id="HC Code" type="text">
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="form-row">
+                <div class="input-box">
+                    <input type="file">
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary btn-lg">Наступний крок<img src="./assets/img/arrow-circle-left 1.png"
+                    alt="icon-arrow"></a>
         </form>
+        <img src="./assets/img/man-holding.png" alt="man">
     </div>
 </section>
