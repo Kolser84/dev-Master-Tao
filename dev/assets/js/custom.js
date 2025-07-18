@@ -31,3 +31,8 @@ const headerHeight = header.offsetHeight
 
 banner.setAttribute('style', '--header-height:' + headerHeight + 'px')
 
+const inputCheckbox = document.querySelectorAll('input[type="checkbox"]')
+inputCheckbox.forEach(item => {
+  item.closest('.input-box').classList.add('input-box_checkbox')
+
+})

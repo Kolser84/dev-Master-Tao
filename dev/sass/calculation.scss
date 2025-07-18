@@ -58,10 +58,17 @@ input[type='checkbox'] + label:before {
 
 input[type='checkbox']:checked + label:before {
             content: "";
-            background: url(./assets/img/checked.svg) $color;
+            background: url(./assets/img/checked.svg) center $color no-repeat;
         
 }
 
 input[type='checkbox'] {
     display: none;
+    + label {
+        &:hover { 
+           &:before {
+                border-color: $primary-color;
+            }
+        }
+    }
 }
