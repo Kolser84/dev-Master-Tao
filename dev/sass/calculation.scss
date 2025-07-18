@@ -1,0 +1,49 @@
+.calculation-form {
+    max-width: 626px;
+    height: 597px;
+    background: $bg-color-accent;
+    border-radius: 20px;
+    padding: 50px 50px 60px;
+}
+
+.form-row {
+    display: flex;
+    gap:28px 30px;
+    margin-bottom: 34px;
+    &:last-of-type {
+        margin-bottom: 24px;
+    }
+}
+
+.form-column {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    background-color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 18px 20px;
+   
+}
+
+input[type='checkbox'] + labe:before {
+            content: "1";
+            background-color: blue;
+            position: absolute;
+}
+
+input[type='checkbox']:checked + labe:before {
+            content: "0";
+            background-color: yellow;
+}
+
